@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro</title>
+    <link rel="stylesheet" href="{% static 'css/styleCadastro.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>EDUCAGAMEZ</h1>
+  <h4><span class="sombreado">Jogando e aprendendo</span></h4>
+  <img src="https://i.pinimg.com/originals/13/bf/b4/13bfb4dff8f3bc05e549eaba2349e797.png" style="
+    position: absolute;
+    width: 44px;
+    height: 40px;
+    left: 249px;
+    top: 47px;
+    transform: rotate(-14deg);
+">
+  <hr class='linha1'
+    style="
+    position: absolute;
+    width: 1350px;
+    height: 0px;
+    left:0px;
+    top: 76px;
+
+    border: 1px solid #061A82;">
+  <div class="container" style="
+    position: absolute;
+    background-color: #fff;
+    width: 800px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 20%;
+    left: 20%;">
+  <form method="post">
+    {% csrf_token %}
+    
+    <h2>Cadastre-se</h2>
+    <div class="grid-container" style="
+      display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;">
+      <div class="form-group">
+      <label for="nome-completo">Nome completo:</label>
+      <input type="text" id="nome-completo" name="nome" required style ="
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+ 
+  background-color: #f4f4f4;">
+    </div>
+      <div class="form-group">
+        <label for="nome-usuario">Nome de usuário:</label>
+        <input type="text" id="nome-usuario" name="usuario"  required style ="
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f4f4f4;">
+      </div> </div>
+    <div class="grid-container" style="
+      display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;">
+      <div class="form-group">
+        <label for="escola">Escola:</label>
+        <input type="text" id="escola" name="escola" required style ="
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f4f4f4;">
+      </div> 
+    <div class="form-group"> 
+      <label for="serie">Série:</label> 
+      <input type="text" id="serie" name="serie" required style ="
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f4f4f4;">
+      </div> </div>
+    <div class="grid-container" style="
+      display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: -8px;">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"  required style ="
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f4f4f4;">
+      </div>
+    
+      <div class="form-group">
+        <label for="senha">Senha:</label>
+        <input type="text" id="senha" name="senha" required style ="
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f4f4f4;">
+      </div> </div>
+    
+      <input type="submit" </a>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styleLogin.css' %}">
+    
+</head>
+<body>
+  <h1>EDUCAGAMEZ</h1>
+  <h4><span class="sombreado">Jogando e aprendendo</span></h4>
+  <img class='controle' src='https://i.pinimg.com/originals/13/bf/b4/13bfb4dff8f3bc05e549eaba2349e797.png'>
+  <hr class='linha1'>
+  
+  <div class="container">
+    <h2>Entre com sua conta</h2>
+    {% if mensagem %}
+      <div class="error">{{ mensagem }}</div>
+    {% endif %}
+    <form method="post">
+      {% csrf_token %}
+      <input type="text" placeholder="Email" name="email" required>
+      <input type="password" placeholder="Senha" name="senha" required>
+      <input type="submit"  value="Entrar"> 
+    
+    </form>
+    <div class="links-container">
+      <a href="https://educagamez--giovananogueira.repl.co/paginaMudarSenha">Esqueceu sua senha?</a>
+      <a href="https://educagamez.giovananogueira.repl.co/paginaCadastro">Cadastre-se gratuitamente</a>
+    </div>
+  </div>
+</body>
+</html>

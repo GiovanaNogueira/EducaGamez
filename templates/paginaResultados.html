@@ -1,0 +1,47 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resultado</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styleResultados.css' %}">
+  </head>
+  
+
+<body>
+   <h1>EDUCAGAMEZ</h1>
+  <h4><span class="sombreado">Jogando e aprendendo</span></h4>
+   <hr class='linha1'>
+
+   <img class='controle' src='https://i.pinimg.com/originals/13/bf/b4/13bfb4dff8f3bc05e549eaba2349e797.png'>
+  <a href ="https://educagamez.giovananogueira.repl.co/paginaPerfil"> 
+    <img src="https://api.iconify.design/carbon/user-avatar.svg?color=white&width=65&height=63" style="position:absolute;
+    top:3%;
+    right:2%;"> 
+  </a>
+  
+  <div class="container">
+    <img class ='estrela1' src="https://api.iconify.design/material-symbols/star.svg?color=%23ffc107">
+    <img class ='estrela2' src="https://api.iconify.design/material-symbols/star.svg?color=%23ffc107">
+    <img class ='estrela3' src="https://api.iconify.design/material-symbols/star.svg?color=%23ffc107">
+    <img class ='estrela4' src="https://api.iconify.design/material-symbols/star.svg?color=%23ffc107">
+    
+    <div class="frase1"> {{frase}} </div>
+    
+    <div class="frase2"> Acertou {{ acertos }}/10 questões </div>
+    <div class= "containerB">
+      <div class = "xp"> +800 XP </div>
+    </div>
+   
+    <div class= "jogarNovamente">  <a class="jogarNovamente" href="https://educagamez--giovananogueira.repl.co/paginaEscolhaConteudo">Jogar novamente</a></div>
+   
+    
+  </div>
+
+  
+  
+</body>
+
+</html>

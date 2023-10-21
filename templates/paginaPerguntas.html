@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Perguntas</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Lato&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{% static 'css/stylePerguntas.css' %}">
+  
+      
+</head>
+
+<body>
+  <h1>EDUCAGAMEZ</h1>
+  <h4><span class="sombreado">Jogando e aprendendo</span></h4>
+  <div class="container">
+    <div class="questao"> {{pergunta.fields.conteudo}} </div>
+  </div>
+  <img class='relogio' src="https://api.iconify.design/carbon/time.svg?color=white">
+  <img class='controle' src='https://i.pinimg.com/originals/13/bf/b4/13bfb4dff8f3bc05e549eaba2349e797.png'>
+
+  <form method="post">
+    {% csrf_token %}
+    <div class="containerA">
+      {% for resposta in respostas %}
+      {% if forloop.counter == 1 %}
+      <div class="opcao1">  <input type="submit" name="resposta" value="{{resposta.conteudo}}"></div> 
+      {% endif %}
+      {% endfor %}
+    </div>
+    
+  
+    <div class="containerB">
+      {% for resposta in respostas %}
+      {% if forloop.counter == 2 %}
+      <div class="opcao2"> <input type="submit" name="resposta" value="{{resposta.conteudo}}"> </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  
+    <div class="containerC">
+      {% for resposta in respostas %}
+      {% if forloop.counter == 3 %}
+      <div class="opcao3"> <input type="submit" name="resposta" value="{{resposta.conteudo}}"> </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  
+    <div class="containerD">
+      {% for resposta in respostas %}
+      {% if forloop.counter == 4 %}
+      <div class="opcao4"><input type="submit" name="resposta" value="{{resposta.conteudo}}"> </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <input type="hidden"name="todasPerguntas" value="{{ jsonPerguntas }}">
+    <input type="hidden"name="indiceAtual" value="{{ indiceAtual }}">
+    <input type="hidden"name="acertos" value="{{ acertos }}">
+  </form>
+  <div class="sair"> <a href="https://educagamez--giovananogueira.repl.co/paginaEscolhaConteudo">Sair</a> </div>
+
+
+</html>
+</body>   
+<div class="elipseA">
+  <img class="iconA"src="https://api.iconify.design/fa-solid/puzzle-piece.svg?color=white">
+</div> 
+<div class="elipseB">
+  <img class="iconB" src="https://api.iconify.design/heroicons/puzzle-piece-20-solid.svg?color=white">
+</div> 
+
+<div class="elipseC">
+  <img class="iconC"src="https://api.iconify.design/fa6-solid/puzzle-piece.svg?color=white">
+ 
+</div> 
+
+<div class="elipseD">
+  <img class="iconD"src="https://api.iconify.design/bi/puzzle-fill.svg?color=white">
+
+</div> 

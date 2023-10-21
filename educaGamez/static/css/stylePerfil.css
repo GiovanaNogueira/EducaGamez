@@ -1,0 +1,404 @@
+Skip to content
+
+Search & run commands
+Search & run commands
+Ctrl
+.
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #3B57EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+h1 {
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 320px;
+  height: 34px;
+  left: 37px;
+  top: 0px;
+  -webkit-text-stroke: 1.3px  #000000;
+  
+}
+
+.controle {
+  position: absolute;
+  width: 44px;
+  height: 40px;
+  left: 249px;
+  top: 47px;
+  transform: rotate(-14deg);
+}
+
+h4 {
+  position: absolute;
+  width: 242px;
+  height: 45px;
+  left: 37px;
+  top: 20px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #FFFFFF;
+  
+
+
+}
+
+.conteudo {
+  position: absolute;
+  width: 101px;
+  height: 24px;
+  left: 361px;
+  top: 32px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #FFFFFF;
+
+  
+}
+
+h2 {
+  position: absolute;
+  width: 162px;
+  height: 39px;
+  left: 95px;
+  top: 75px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.linha1 {
+  position: absolute;
+  width: 1355px;
+  height: 0px;
+  left: 5px;
+  top: 76px;
+
+  border: 1px solid #061A82;
+}
+
+.linha2 {
+  position: absolute;
+  width: 175px;
+  height: 0px;
+  left: 80px;
+  top: 130px;
+
+  border: 1px solid #FFFFFF;
+}
+
+.container1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 394px;
+  height: 388px;
+  left: 250px;
+  top: 175px;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.container2 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 513px;
+  height: 444px;
+  left: 750px;
+  top: 130px;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.perfil{
+  position: absolute;
+  left: 13%;
+  right: 84.86%;
+  top: 10%;
+  bottom: 70%;
+
+
+}
+
+.usuario {
+  position: absolute;
+  width: 222px;
+  height: 44px;
+  left: 160px;
+  top: 55px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  
+}
+
+.nome {
+  position: absolute;
+  width: 222px;
+  height: 44px;
+  left: 30px;
+  top: 130px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.escola {
+  position: absolute;
+  width: 222px;
+  height: 44px;
+  left: 30px;
+  top: 200px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.serie {
+  position: absolute;
+  width: 222px;
+  height: 44px;
+  left: 30px;
+  top: 270px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.trofeu {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 50px;
+  top: 40px;
+}
+
+.pont {
+  position: absolute;
+  width: 222px;
+  height: 44px;
+  left: 150px;
+  top: 50px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
+.tot {
+  position: absolute;
+  width: 222px;
+  height: 44px;
+  left: 150px;
+  top: 95px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.soma{
+  position: absolute;
+  width: 222px;
+  height: 44px;
+  left: 80px;
+  top: 170px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sub {
+  position: absolute;
+  width: 222px;
+  height: 44px;
+  left: 80px;
+  top: 230px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.divisao {
+  position: absolute;
+  width: 222px;
+  height: 44px;
+  left: 80px;
+  top: 290px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mult {
+  position: absolute;
+  width: 269px;
+  height: 44px;
+  left: 80px;
+  top: 350px;
+
+  font-family:'Fredoka', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.sombreado {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
